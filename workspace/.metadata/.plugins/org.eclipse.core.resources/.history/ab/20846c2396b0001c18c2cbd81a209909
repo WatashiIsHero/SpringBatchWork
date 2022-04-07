@@ -1,0 +1,22 @@
+body {
+ width: 40%;
+}
+table{
+width: 100%;
+border-collapse: collapse;
+font-size: 13px;
+}
+table th, table td {
+border: 1px solid #ddd;
+padding: 6px;
+}
+.theadEsta{
+ background-color: #F2F2F2;
+}
+.formTitle{
+ text-align: left;
+}
+.btnArea{
+ position: relative;
+ left: 170px;
+}

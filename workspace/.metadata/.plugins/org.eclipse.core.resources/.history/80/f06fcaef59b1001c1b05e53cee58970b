@@ -1,0 +1,15 @@
+package com.sios.ex.springbatch;
+
+import org.springframework.batch.core.launch.support.CommandLineJobRunner;
+import org.springframework.boot.CommandLineRunner;
+
+public class BatchCommandLineRunner implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		CommandLineJobRunner.main(new String[] {
+				"com.sios.ex.springbatch.SpringBatchSample1Configuration",
+				"sampleBatch1Job"});
+	}
+}

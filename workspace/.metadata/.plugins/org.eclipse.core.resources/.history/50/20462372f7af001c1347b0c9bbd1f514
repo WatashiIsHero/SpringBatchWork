@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+import .repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.example.demo.model.Weather;
+@Repository
+public interface WeatherRepository extends JpaRepository<Weather, Integer> {
+	
+}

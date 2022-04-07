@@ -1,0 +1,27 @@
+package com.sios.ex.springbatch;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.batch.item.ItemReader;
+import org.springframework.batch.item.data.RepositoryItemReader;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.domain.Sort.Direction;
+
+public class SpringBatchSample1Configuration {
+	
+	@Autowired
+	private SourceItemRepository sourceItemRepository;
+	
+	@Bean
+	public ItemReader<SourceItemEntity> sourceItemReader() {
+	  RepositoryItemReader<SourceItemEntity> reader = new RepositoryItemReader<>();
+	  reader.setRepository(sourceItemRepository);
+	  reader.setMethodName("findAll");
+	  Map<String, Direction> sort = new HashMap<>();
+	  sort.put("name", Direction.ASC);
+	  reader.setSort(sort);
+	  return reader;
+	}
+}

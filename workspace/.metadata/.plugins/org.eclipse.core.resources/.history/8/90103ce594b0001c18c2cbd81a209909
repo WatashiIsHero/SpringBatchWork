@@ -1,0 +1,19 @@
+body {
+ width: 30%;
+}
+table{
+width: 100%;
+border-collapse: collapse;
+font-size: 13px;
+}
+table th, table td {
+border: 1px solid #ddd;
+padding: 6px;
+}
+.formTitle{
+ text-align: left;
+}
+.btnArea{
+ position: relative;
+ left: 120px;
+}

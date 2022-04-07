@@ -1,0 +1,12 @@
+body {
+ width: 80%;
+}
+table{
+width: 100%;
+border-collapse: collapse;
+font-size: 13px;
+}
+table th, table td {
+border: 1px solid #ddd;
+padding: 6px;
+}

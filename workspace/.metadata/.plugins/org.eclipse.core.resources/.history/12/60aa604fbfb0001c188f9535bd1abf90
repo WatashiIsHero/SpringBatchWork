@@ -1,0 +1,8 @@
+package com.sios.ex.springbatch;
+
+public class SpringBatchSample1Configuration {
+	
+	@Autowired
+	private SourceItemRepository sourceItemRepository;
+
+}

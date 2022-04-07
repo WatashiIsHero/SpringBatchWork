@@ -1,0 +1,12 @@
+package com.sios.ex.springbatch;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class SpringBatchSample1Configuration {
+	
+	@Autowired
+	private SourceItemRepository sourceItemRepository;
+	
+	
+
+}

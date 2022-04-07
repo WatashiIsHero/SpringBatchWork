@@ -1,0 +1,22 @@
+package com.sios.ex.springbatch;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBatchSample1Application {
+
+	public static void main(String[] args) {
+        SpringApplication application = new SpringApplication(SpringBatchSample1Application.class);
+        application.setWebApplicationType(WebApplicationType.NONE);
+        ApplicationContext context = application.run();
+        SpringApplication.exit(context);
+    }
+ 
+    @Override
+    public void run(String... args) throws Exception {
+        CommandLineJobRunner.main(new String[] {
+                "com.sios.ex.springbatch.SpringBatchSample1Configuration",
+                "sampleBatch1Job"});
+    }
+}

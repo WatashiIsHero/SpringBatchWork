@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>WeatherDisp</title>
+</head>
+<body>
+	<form th:action="@{/hello}" th:object="#{userRequest}" method="post">
+	<p>>情報を表示する地域を入力してください</p>
+	<td><input type="text" th:field="*{name}"></td>
+	<div class="btn_area_center">
+		<input type="submit" value="表示" class="btn">
+	</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.sios.ex.springbatch;
+
+import org.springframework.batch.item.ItemProcessor;
+
+public class TargetItemProcessor implements ItemProcessor<SourceItemEntity, TargetItemEntity> {
+
+	@Override
+	public TargetItemEntity process(SourceItemEntity item) throws Exception {
+		
+		
+		
+		return null;
+	}
+	
+}
